@@ -28,6 +28,12 @@
         android:selectable="false"
         settings:isPreferenceVisible="false"/-->
 
+    <!-- Header ROM logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="logo_nad2"
+        android:layout="@layout/logo_nad2"
+        android:selectable="false"/>
+
     <!-- Changelog -->
     <Preference
         android:key="changelog"
