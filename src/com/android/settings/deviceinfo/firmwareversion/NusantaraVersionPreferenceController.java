@@ -35,8 +35,6 @@ public class NusantaraVersionPreferenceController extends BasePreferenceControll
     private static final Uri INTENT_URI_DATA = Uri.parse("https://github.com/Nusantara-ROM/");
     private static final String TAG = "nadDialogCtrl";
     private static final String ROM_VERSION_PROP = "ro.nad.build.version";
-    private static final String ROM_RELEASETYPE_PROP = "ro.nad.build.type";
-    private static final String ROM_CODENAME_PROP = "ro.nad.build_codename";
     private final PackageManager mPackageManager = this.mContext.getPackageManager();
 
     public NusantaraVersionPreferenceController(Context context, String preferenceKey) {
@@ -50,12 +48,8 @@ public class NusantaraVersionPreferenceController extends BasePreferenceControll
     public CharSequence getSummary() {
         String nusantaraVersion = SystemProperties.get(ROM_VERSION_PROP,
                 mContext.getString(R.string.device_info_default));
-        String nusantaraReleasetype =  SystemProperties.get(ROM_RELEASETYPE_PROP,
-                this.mContext.getString(R.string.device_info_default));
-        String nusantaraCodename =  SystemProperties.get(ROM_CODENAME_PROP,
-                this.mContext.getString(R.string.device_info_default));
-        if (!nusantaraVersion.isEmpty() && !nusantaraReleasetype.isEmpty())
-            return nusantaraVersion + " | " + nusantaraCodename + " | " + nusantaraReleasetype;
+        if (!nusantaraVersion.isEmpty())
+            return nusantaraVersion;
         else
             return mContext.getString(R.string.nad_version_default);
     }
