@@ -18,7 +18,7 @@
 
         <ImageView
             android:layout_width="600dp"
-            android:layout_height="170dp"
+            android:layout_height="160dp"
             android:src="@drawable/logo_nad2"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"

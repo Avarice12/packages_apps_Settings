@@ -16,10 +16,10 @@
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
 
     <!-- About phone screen, Nusantara version -->
-    <string name="nad_version">TwiceOS version</string>
-    <string name="nad_version_default">More and More</string>
+    <string name="nad_version">트와이스OS | TwiceROM version</string>
+    <string name="nad_version_default">Jeongyeon Edition</string>
     <string name="keywords_corvus_version">twice version</string>
-    <string name="maintainer">Maintainer</string>
+    <string name="maintainer">관리자 | Maintainer</string>
     <string name="maintainer_name">Rafiester x Jeongyeon</string>
 
     <!-- Fingerprint location message - default -->
@@ -170,10 +170,10 @@ phone.</string>
     <string name="vibrate_on_notifications_title">Vibrate for notifications</string>
 
     <!-- SELinux Status -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
-    <string name="selinux_status_permissive">Permissive</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="selinux_status">SELinux 상태 | SELinux status</string>
+    <string name="selinux_status_disabled">장애인 | Disabled</string>
+    <string name="selinux_status_permissive">허용하는| Permissive</string>
+    <string name="selinux_status_enforcing">집행 | Enforcing</string>
 
     <!-- Custom ambient display -->
     <string name="ambient_display_category">Ambient display</string>
